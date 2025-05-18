@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CiVishal Mega Mart Examination Board (VMMEB) - Vishal Mega Mart Guard Entrance Examination 2025</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="header-bar"></div>
+        <header class="main-header">
+            <h1>Vishal Mega Mart Examination Board (VMMEB)</h1>
+            <h2>Vishal Mega Mart Guard Entrance Examination 2025</h2>
+        </header>
+        <div class="marquee-bar">
+            <marquee>Results are out &nbsp;❗❗❗&nbsp; Check your result &nbsp; Results are out &nbsp;❗❗❗&nbsp; Check your result &nbsp; Results are out &nbsp;❗❗❗&nbsp; Check your result</marquee>
+        </div>
+        <main>
+            <div id="form-section">
+                <form id="resultForm" class="result-form-meme">
+                    <h3>Vishal Mega Mart Guard Entrance Examination 2025</h3>
+                    <div class="form-group">
+                        <label for="fullName">Enter your Full Name <span class="hint">(as given on your admit card)</span></label>
+                        <input type="text" id="fullName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Enter Date of Birth</label>
+                        <input type="text" id="dob" placeholder="dd-mm-yyyy" required>
+                        <span class="hint">(DD/MM/YYYY)</span>
+                    </div>
+                    <div class="form-group captcha-group">
+                        <label for="captcha">Enter CAPTCHA</label>
+                        <input type="text" id="captcha" required style="width: 120px;">
+                        <span id="captchaText" class="captcha-text"></span>
+                        <button type="button" id="refreshCaptcha">Refresh</button>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                    </div>
+                </form>
+            </div>
+            <div id="result-section" style="display:none;">
+                <div class="result-header">
+                    <h2>Vishal Mega Mart Examination Board (VMMEB)</h2>
+                    <h3>Vishal Mega Mart Guard Entrance Examination 2025</h3>
+                    <div class="result-actions">
+                        <button id="printBtn">Print</button>
+                        <button id="backBtn">Back</button>
+                    </div>
+                </div>
+                <div class="candidate-info">
+                    <table>
+                        <tr><td><b>Roll No:</b></td><td id="resRoll"></td><td><b>Admit Card ID:</b></td><td id="resAdmit"></td></tr>
+                        <tr><td><b>Candidate Name:</b></td><td id="resName"></td><td><b>Date of Birth:</b></td><td id="resDOB"></td></tr>
+                    </table>
+                </div>
+                <div class="marks-table-meme">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>SUB CODE</th><th>SUB NAME</th><th>THEORY (80)</th><th>PRACTICAL (20)</th><th>TOTAL</th><th>GRADE</th>
+                            </tr>
+                        </thead>
+                        <tbody id="marksBody"></tbody>
+                    </table>
+                </div>
+                <div class="result-status">
+                    <span id="finalStatus"></span>
+                </div>
+                <div class="result-summary">
+                    <span id="totalMarks"></span> | <span id="percentage"></span> | <span id="cutoff"></span>
+                </div>
+                <div class="disclaimer">
+                    <p>The results published here are for immediate reference only. Vishal Mega Mart and the Board of Retail Operations are not responsible for any discrepancies or technical errors. Original mark sheets will be issued separately.</p>
+                    <p>© 2025 Vishal Mega Mart Examination Board (VMMEB). All Rights Reserved.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
