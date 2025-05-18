@@ -66,13 +66,14 @@ marquee {
     margin-top: 40px;
 }
 
-.result-form-meme {
+.result-form-meme, #result-section {
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 12px rgba(0,0,0,0.08);
     padding: 32px 36px 24px 36px;
     min-width: 420px;
     max-width: 480px;
+    margin: 40px auto 0 auto;
 }
 
 .result-form-meme h3 {
@@ -168,16 +169,6 @@ button[type="submit"]:hover {
 }
 button[type="reset"]:hover {
     background: #555;
-}
-
-#result-section {
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-    padding: 32px 36px 24px 36px;
-    min-width: 600px;
-    max-width: 800px;
-    margin: 40px auto 0 auto;
 }
 
 .result-header {
@@ -381,6 +372,7 @@ footer {
         min-width: unset;
         max-width: 98vw;
         padding: 20px 2vw 20px 2vw;
+        margin: 24px auto 0 auto;
     }
     .main-header h1 {
         font-size: 1.2rem;
@@ -405,6 +397,7 @@ footer {
         padding: 8px 0 8px 0;
         box-sizing: border-box;
         border-radius: 0;
+        box-shadow: none;
     }
     .result-header, .candidate-info, .marks-table-meme, .result-status, .result-summary, .disclaimer {
         padding-left: 2vw;
