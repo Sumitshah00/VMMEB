@@ -66,12 +66,12 @@ marquee {
     margin-top: 40px;
 }
 
-.result-form-meme, #result-section {
+.card {
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 12px rgba(0,0,0,0.08);
     padding: 32px 36px 24px 36px;
-    min-width: 420px;
+    min-width: 320px;
     max-width: 480px;
     margin: 40px auto 0 auto;
 }
@@ -389,7 +389,7 @@ footer {
     .main-container {
         padding: 0;
     }
-    .result-form-meme, #result-section {
+    .card {
         min-width: unset;
         max-width: 100vw;
         width: 100vw;
@@ -416,22 +416,6 @@ footer {
     .form-actions {
         flex-direction: column;
         gap: 8px;
-    }
-    .marks-table-meme table, .candidate-info table {
-        font-size: 0.85rem;
-    }
-    .form-group label, .form-group .hint {
-        font-size: 0.95rem;
-    }
-    input[type="text"], button, #refreshCaptcha {
-        width: 100% !important;
-        box-sizing: border-box;
-        font-size: 1rem;
-    }
-    .captcha-group {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 6px;
     }
     .marks-table-meme {
         overflow-x: auto;
